@@ -4,15 +4,15 @@
 Node: 13.1.0
 Angular: 8.2.14
 
-# Installation Steps
-1. Clone the repo
+## Installation Steps
+### Clone the repo
     git clone https://github.com/thapa26/CompanyProject.git
-2. Switch to directory
+### Switch to directory
     cd <DIR_NAME>
-3. Install dependencies
+### Install dependencies
     npm i
     npm install chart.js --save
-4. Start Application
+### Start Application
     ng serve
 
 Open the following link the browser
