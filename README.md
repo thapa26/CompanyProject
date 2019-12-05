@@ -1,10 +1,10 @@
 # AngularJS demo application integrated with dummy apis(mocky.io).
 
-## Dependencies
+# Dependencies
 Node: 13.1.0
 Angular: 8.2.14
 
-## Installation Steps
+# Installation Steps
 1. Clone the repo
     git clone https://github.com/thapa26/CompanyProject.git
 2. Switch to directory
