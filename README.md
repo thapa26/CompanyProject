@@ -6,7 +6,7 @@ Angular: 8.2.14
 
 ## Installation Steps
 1. Clone the repo
-    git clone <LINK>
+    git clone https://github.com/thapa26/CompanyProject.git
 2. Switch to directory
     cd <DIR_NAME>
 3. Install dependencies
