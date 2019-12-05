@@ -1,0 +1,257 @@
+.main-Container{
+margin-right: 5%;
+margin-left: 5%;
+margin-bottom: 5%;
+}
+/* -----------button---------------- */
+.button-Container{
+  margin-left:20%; 
+  width: 60%;
+  /* padding: 5%; */
+}
+.button-inner{
+  height: 80px;
+  border-radius:50px;
+  border: 2px solid whitesmoke;
+  padding:10px !important;
+  vertical-align: middle;
+  margin: 4px;   
+}
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  height: 59px;
+  width: 100%;
+}
+
+.btn-group p{
+  font-size: 18px;
+  margin-top:10px; 
+  vertical-align: middle;
+  
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+background-color: red;
+color:#FFF;
+border-color: red;
+}
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+/* Moniter  */
+
+.row{
+    width: 100%;
+    height: 250px;
+}
+.colume{
+    width:250px;
+   
+}
+.moniter-Container{
+    width: 100%;
+    padding: 5%; 
+}
+.inner-Container{
+  width: 1300px;
+  height: 330px;
+
+}
+.container {
+    width: 100%;
+    float: left;
+  }
+.card-columns {
+    column-count: 5;
+    column-gap: 19%; 
+}
+.card {
+  height: 220px;
+  width: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 15px;
+    border-radius: 25px;
+    
+  }
+  .card-1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 15px;
+    
+  }
+  .card img{
+      height: 80px;
+      width: 80px;
+      float: center;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(68, 65, 65, 0.986);
+  }
+  .bg-danger {
+    background-color: red !important;
+}
+  
+
+
+/* -----------Map-------------- */
+
+  .map-Container{
+    width: 100%;
+    float: left;
+    padding-left: 5%;  
+    padding-right: 5%; 
+  }
+
+.MapShow{
+  width: 100%;
+  padding: 15px !important;
+  border: 1px solid gainsboro ;
+  border-radius:25px !important;
+    }
+
+agm-map{
+    height: 600px;
+}
+gm-info-window{
+    border: 1px solid red; 
+}
+
+.button-shape{
+    background-color: red;
+    border-radius:25px;
+    color: white;
+    border: 1px solid red;
+    float: right;
+}
+.h6, h6 {
+    font-size: 12px;
+}
+.gm-style .gm-style-iw-c {
+    border: 1px solid red !important;
+}
+
+
+.Container{
+  margin: 0;
+  height: 80px;
+  width: 100%;  
+}
+.main{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5px;
+  float: left;
+  height: 80px;
+  width: 100%;
+}
+.main li{
+  margin-right:80px; 
+  padding: 5px;
+  list-style-type:none ;
+  float: left;
+}
+.main .li1{
+  margin-top: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: 60px;
+  margin-right: 55px;
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid gainsboro;
+
+}
+
+input{
+  outline: none;
+}
+.main .li1 input{
+  margin-left:30px; 
+  text-align: center;
+  height: 50px;
+  border: 1px solid white;
+}
+.main .li1 button{
+  border-radius: 50px;
+  height: 40px;
+  outline: none;
+  background-color: white;
+  width: 40px;
+  border: 1px solid white;
+}
+.main .li2{
+  height: 60px;
+  margin-right: 55px;
+  border-radius: 50px;
+}
+.main .li2 button{
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50px;
+  background-color: white;
+  font-size: 20px;
+  outline: none;
+  vertical-align: middle;
+  height: 60px;
+  border: 1px solid gainsboro;
+}
+
+.main .li3{
+  height: 60px;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+.main .li3 button{
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 50px;
+  background-color: white;
+  font-size: 20px;
+  vertical-align: middle;
+  height: 60px;
+  color: red;
+  outline: none;
+  border: 1px solid gainsboro;
+}
+.main .li4{
+  margin-right: 50px;
+}
+
+.main .li4 button{
+  margin-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: 60px;
+  width: 50px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.main .li4 button:hover{
+  border:1px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.main .li3 button:hover{
+  border:1px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.main .li2 button:hover{
+  border:1px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.main .li1 button:hover{
+  border:1px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+

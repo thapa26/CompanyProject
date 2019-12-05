@@ -1,0 +1,112 @@
+<div class="button-Container">
+    <div class="button-inner">
+        <div class="btn-group">
+            <button type="button" checked="checked" class="btn btn-danger"><p>Overall</p></button>
+            <button type="button"  class="btn btn-default"><p>Vehicle</p></button>
+            <button type="button" class="btn btn-default"><p>Trip level</p></button>
+        </div>
+    </div>
+</div>  
+<div class="link-container">
+    <ul class="list-group list-group-horizontal">
+          <li class="list-group-item "><a>Today</a></li>
+          <li class="list-group-item text-danger"><a>7 Day</a></li>
+          <li class="list-group-item  "><a>30 Day</a></li>
+          <li class="list-group-item"><a>Custome</a></li>
+    </ul>
+</div>
+<div class="moniter-Container">
+    <div class="container">
+        <div class="card-columns">
+            <div class="colume">
+                <div class="card">
+                    <img src="../assets/images/alarm.png"  alt="Avatar" >
+                    <div class="card-body text-right">
+                        <h4><b>Alarm</b></h4> 
+                        <h3>{{lstget.alarm}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="colume">
+                <div class="card">
+                    <img src="../assets/images/online1.png" alt="Avatar" >
+                    <div class="card-body text-right">
+                        <h4><b>Total Online</b></h4> 
+                        <h3>{{lstget.total_Online}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="colume">
+                <div class="card">
+                    <img src="../assets/images/trips.png" alt="Avatar" >
+                    <div class="card-body text-right">
+                        <h4><b>Total Trips</b></h4> 
+                        <h3>{{lstget.total_Trip}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="colume" >
+                <div class="card">
+                    <img src="../assets/images/distance.png" alt="Avatar" >
+                    <div class="card-body text-right">
+                        <h4><b>Total Distance</b></h4> 
+                        <h3>{{lstget.total_Distance}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="colume">
+                <div class="card">
+                    <img src="../assets/images/Engine.png" alt="Avatar" >
+                    <div class="card-body text-right">
+                        <h4><b>Engine ON Hours</b></h4> 
+                        <h3>{{lstget.engine}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="colume">
+                <div class="card">
+                    <img src="../assets/images/fuel.png" alt="Avatar" >
+                    <div class="card-body text-right">
+                        <h4><b>Fuel Consumed</b></h4> 
+                        <h3>{{lstget.fual}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="chart-container">
+    <div class="card1-columns">
+            <div class="col">
+                <h1>Distance</h1>
+                <div class="card1">
+                    <canvas id="Distance" width="570px" height="570px"></canvas>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Fuel</h1>
+                <div class="card1">
+                    <canvas id="Fuel" width="570px" height="570px"></canvas>
+                </div>
+            </div>
+
+        
+            <div class="col">
+                <h1>Alarm</h1>
+                <div class="card1">
+                    <canvas id="Alarm" width="300px" height="300px"></canvas>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Trips</h1>
+                <div class="card1">
+                    <canvas id="trip" width="300px" height="300px"></canvas>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+
+
+

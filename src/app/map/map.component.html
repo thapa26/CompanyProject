@@ -1,0 +1,143 @@
+<div class="main-Container"> <!-- MAin Cantainer -->
+  <div class="button-Container">
+    <div class="button-inner">
+        <div class="btn-group">
+            <button type="button" routerLink="/map" autofocus class="btn btn-default"><p>DashBoard</p></button>
+            <button type="button" routerLink="/fleet" class="btn btn-default"><p>Fleet</p></button>
+            <button type="button" class="btn btn-default"><p>Trips</p></button>
+            <button type="button" class="btn btn-default"><p>Alarms</p></button>
+          </div>
+    </div>
+  </div> 
+  <div class="moniter-Container">
+          <div class="inner-Container">
+            <div>
+              <h1>Moniter</h1>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="card-columns">
+                        <div class="colume">
+                            <div class="card">
+                              <img src="../assets/images/registration.png"  alt="Avatar" >
+                              <div class="card-body text-right">
+                                <h4><b>Registration</b></h4> 
+                                <h3>{{lstget.registaion}}</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="colume">
+                              <div class="card">
+                                <img src="../assets/images/online.png" alt="Avatar" >
+                                <div class="card-body text-right">
+                                    <h4><b>Online</b></h4> 
+                                    <h3>{{lstget.online}}</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="colume" >
+                                <div class="card bg-danger text-white">
+                                  <img src="../assets/images/moving.png" alt="Avatar" >
+                                  <div class="card-body text-right">
+                                      <h4><b>Moving</b></h4> 
+                                      <h3>{{lstget.moving}}</h3>
+                                  </div>
+                                </div>
+                        
+                              </div>
+                              <div class="colume">
+                                  <div class="card">
+                                    <img src="../assets/images/idle.png" alt="Avatar" >
+                                    <div class="card-body text-right">
+                                        <h4><b>Idle</b></h4> 
+                                        <h3>{{lstget.idle}}</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="colume">
+                                    <div class="card">
+                                      <img src="../assets/images/offline.png" alt="Avatar" >
+                                      <div class="card-body text-right">
+                                          <h4><b>Offine</b></h4> 
+                                          <h3>{{lstget.offline}}</h3>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+  </div>
+  
+  <div class="Container">
+      <ul class="main ">
+          <li><h1>Map</h1></li>
+          <li class="li1"><input  placeholder="Search  of Vehicle no.">
+            <button ><i class="fa fa-search"></i></button></li>
+          <li class="li2"><Button><i class="fa fa-circle" ></i>    Connection    <i class="fa fa-caret-down"></i></Button></li>
+          <li class="li3"><button>Filter  <i class="fa fa-filter"></i></button></li>
+          <li class="li4"><button class="right"><i class="fa fa-angle-left"></i></button> <button class="left"><i class="fa fa-angle-right"></i></button></li>
+      </ul>
+  </div>
+
+  <div class="map-Container">
+          <div class="inner">
+  
+            <div class="map-row">
+<!-- <div id="Colume"> 
+                    <div class="map">
+                        <p>Map</p>
+                    </div>
+                
+                    <div class="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="       Search of Vehicle No.">
+                            <div class="input-group-btn">
+                              <button class="btn" type="submit">
+                                <i ><img src="../assets/images/search.png" alt=""></i>
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                     <div class="Connection">
+                      <img src="../assets/images/green.png" alt="">Connecton <img src="../assets/images/black.png" alt="">
+                    </div>
+                    <div class="serviceBox3">
+                        Filter
+                        <img src="" alt="a">
+                     </div>
+                    <div class="serviceBox4">
+                       <button><img src="" alt="a"></button><button><img src="" alt="b"></button>
+                     </div>
+                 </div> -->
+            </div>
+                    <div class="MapShow">
+                        <agm-map [latitude]="latitude" 
+                        [longitude]="longitude"
+                        
+                         (mapClick)="onChoseLocation($event)">
+                          <agm-marker 
+                          iconUrl='https://maps.google.com/mapfiles/kml/shapes/library_maps.png'
+                          *ngFor="let m of marker; let i = index"
+                          [latitude]="m.lat" 
+                          [longitude]="m.lng"
+                           >
+                           <agm-info-window>
+                               <div class="colume-info-window">
+                                 <h6>id:XYZ  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Connection:online</h6>
+                                  <h6>Speed:X km/hr &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status:idle </h6>
+                                 <button class="button-shape">see more</button>
+                               </div> 
+                           </agm-info-window>
+                          </agm-marker>
+                        </agm-map>
+                    </div>
+                 </div> 
+           
+
+        
+  </div>
+  
+
+</div>
+
